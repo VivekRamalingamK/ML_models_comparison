@@ -1,9 +1,15 @@
-2023-02-02 17:36:21,251: INFO:  Test train split done successfully. Train data : 70.0% and test data: 30.0%
-2023-02-02 17:36:21,254: INFO:  The input_train and input_test sets are successfully scaled using StandardScaler()
-2023-02-02 17:36:21,443: INFO:  Writing results of Random Forest Classifier model to ..\results\RandomForestClassifier_results.txt
-2023-02-02 17:36:21,444: INFO:  Successfully written results of Random Forest Classifier model to ..\results\RandomForestClassifier_results.txt
-2023-02-02 17:36:21,838: INFO:  Successfully stored RandomForestClassifier_cm.png
-2023-02-02 17:36:24,107: INFO:  Writing results of Logistic Regression model to ..\results\LogisticRegression_results.txt
-2023-02-02 17:36:24,110: INFO:  Successfully written results of Logistic Regression model to ..\results\LogisticRegression_results.txt
-2023-02-02 17:36:24,411: INFO:  Successfully stored LogisticRegression_cm.png
-2023-02-02 17:36:27,567: INFO:  Successfully stored RandomForestClassifier_vs_LogisticRegression_roc.png
+2023-02-02 22:29:25,975: INFO:  Test train split done successfully. Train data : 70.0% and test data: 30.0%
+2023-02-02 22:29:25,978: INFO:  The input_train and input_test sets are successfully scaled using StandardScaler()
+2023-02-02 22:29:26,181: INFO:  Writing results of model Random Forest Classifier - Test Data  to ..\results\RandomForestClassifier-TestData_results.txt
+2023-02-02 22:29:26,181: INFO:  Successfully written results of Random Forest Classifier - Test Data model to ..\results\RandomForestClassifier-TestData_results.txt
+2023-02-02 22:29:26,576: INFO:  Successfully stored RandomForestClassifier-TestData_cm.png
+2023-02-02 22:29:28,232: INFO:  Writing results of model Random Forest Classifier - Train Data  to ..\results\RandomForestClassifier-TrainData_results.txt
+2023-02-02 22:29:28,233: INFO:  Successfully written results of Random Forest Classifier - Train Data model to ..\results\RandomForestClassifier-TrainData_results.txt
+2023-02-02 22:29:28,536: INFO:  Successfully stored RandomForestClassifier-TrainData_cm.png
+2023-02-02 22:29:29,143: INFO:  Writing results of model Logistic Regression - Test Data  to ..\results\LogisticRegression-TestData_results.txt
+2023-02-02 22:29:29,144: INFO:  Successfully written results of Logistic Regression - Test Data model to ..\results\LogisticRegression-TestData_results.txt
+2023-02-02 22:29:29,534: INFO:  Successfully stored LogisticRegression-TestData_cm.png
+2023-02-02 22:29:30,651: INFO:  Writing results of model Logistic Regression - Train Data  to ..\results\LogisticRegression-TrainData_results.txt
+2023-02-02 22:29:30,652: INFO:  Successfully written results of Logistic Regression - Train Data model to ..\results\LogisticRegression-TrainData_results.txt
+2023-02-02 22:29:30,894: INFO:  Successfully stored LogisticRegression-TrainData_cm.png
+2023-02-02 22:29:31,888: INFO:  Successfully stored RandomForestClassifier_vs_LogisticRegression_roc.png

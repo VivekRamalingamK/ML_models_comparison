@@ -1,0 +1,5 @@
+Results of model Random Forest Classifier - Train Data :
+
+Accuracy score: 0.992462311557789
+Recall score: 0.9880952380952381
+Precision score: 1.0

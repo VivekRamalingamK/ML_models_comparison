@@ -138,7 +138,7 @@ def ml_preprocessing(input_data: np.ndarray, output_data: np.ndarray,
                           f"'test_train_val_split' but it is given as '{data_spilt_type}'"))
 
 
-def ml_results_preparation(output_pred: np.ndarray, output_actual: np.ndarray, model_name: str, show: bool = True) \
+def ml_results_preparation(output_pred: np.ndarray, output_actual: np.ndarray, model_note: str, show: bool = True) \
         -> None:
     """
     This function calculates the metrics accuracy, recall and precision and store them in a file in
@@ -148,7 +148,7 @@ def ml_results_preparation(output_pred: np.ndarray, output_actual: np.ndarray, m
 
     :param output_actual: np.ndarray. A numpy array of actual output.
 
-    :param model_name: str. A string indicating the name of the model.
+    :param model_note: str. A string indicating the name of the model, which dataset (train or test or val).
 
     :param show: bool. A boolean value indicating whether to show the pictures while running or not.
     """
@@ -157,21 +157,21 @@ def ml_results_preparation(output_pred: np.ndarray, output_actual: np.ndarray, m
     recall = recall_score(output_pred, output_actual)
     precision = precision_score(output_pred, output_actual)
 
-    results_filepath = f'..\\results\\{model_name.replace(" ", "")}_results.txt'
+    results_filepath = f'..\\results\\{model_note.replace(" ", "")}_results.txt'
     with open(results_filepath, 'w') as results:
-        logging.info(f"Writing results of {model_name} model to {results_filepath}")
-        results.write(f"Results of {model_name} model:\n\n")
+        logging.info(f"Writing results of model {model_note}  to {results_filepath}")
+        results.write(f"Results of model {model_note} :\n\n")
         results.write(f"Accuracy score: {accuracy}\n")
         results.write(f"Recall score: {recall}\n")
         results.write(f"Precision score: {precision}\n")
 
-    logging.info(f"Successfully written results of {model_name} model to {results_filepath}")
+    logging.info(f"Successfully written results of {model_note} model to {results_filepath}")
 
     ConfusionMatrixDisplay.from_predictions(y_true=output_actual, y_pred=output_pred, normalize='all')
 
-    plt.title(f'Confusion matrix for {model_name} model')
-    plt.savefig(f'..\\results\\{model_name.replace(" ", "")}_cm.png')
-    logging.info(f'Successfully stored {model_name.replace(" ", "")}_cm.png')
+    plt.title(f'Confusion matrix for {model_note} model')
+    plt.savefig(f'..\\results\\{model_note.replace(" ", "")}_cm.png')
+    logging.info(f'Successfully stored {model_note.replace(" ", "")}_cm.png')
 
     if show:
         plt.show()

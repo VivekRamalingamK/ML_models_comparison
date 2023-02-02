@@ -27,7 +27,11 @@ def main():
     # evaluation of model1
     output_test_pred_model1 = model1.predict(input_test)
     ml_results_preparation(output_pred=output_test_pred_model1,
-                           output_actual=output_test, model_name="Random Forest Classifier")
+                           output_actual=output_test, model_note="Random Forest Classifier - Test Data")
+
+    output_train_pred_model1 = model1.predict(input_train)
+    ml_results_preparation(output_pred=output_train_pred_model1,
+                           output_actual=output_train, model_note="Random Forest Classifier - Train Data")
 
     # fitting of model2 - Logistic Regression
     model2 = LogisticRegression(C=0.5, random_state=0)
@@ -36,7 +40,11 @@ def main():
     # evaluation of model2
     output_test_pred_model2 = model2.predict(input_test)
     ml_results_preparation(output_pred=output_test_pred_model2,
-                           output_actual=output_test, model_name="Logistic Regression")
+                           output_actual=output_test, model_note="Logistic Regression - Test Data")
+
+    output_train_pred_model2 = model2.predict(input_train)
+    ml_results_preparation(output_pred=output_train_pred_model2,
+                           output_actual=output_train, model_note="Logistic Regression - Train Data")
 
     # comparison of model1 and model2 using ROC
     ml_2models_compare_ROC(output_actual=output_test, output_pred_model1=output_test_pred_model1,
