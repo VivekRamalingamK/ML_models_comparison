@@ -1,0 +1,5 @@
+Results of Logistic Regression model:
+
+Accuracy score: 0.9824561403508771
+Recall score: 0.981651376146789
+Precision score: 0.9907407407407407
