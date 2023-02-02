@@ -1,0 +1,9 @@
+2023-02-02 17:36:21,251: INFO:  Test train split done successfully. Train data : 70.0% and test data: 30.0%
+2023-02-02 17:36:21,254: INFO:  The input_train and input_test sets are successfully scaled using StandardScaler()
+2023-02-02 17:36:21,443: INFO:  Writing results of Random Forest Classifier model to ..\results\RandomForestClassifier_results.txt
+2023-02-02 17:36:21,444: INFO:  Successfully written results of Random Forest Classifier model to ..\results\RandomForestClassifier_results.txt
+2023-02-02 17:36:21,838: INFO:  Successfully stored RandomForestClassifier_cm.png
+2023-02-02 17:36:24,107: INFO:  Writing results of Logistic Regression model to ..\results\LogisticRegression_results.txt
+2023-02-02 17:36:24,110: INFO:  Successfully written results of Logistic Regression model to ..\results\LogisticRegression_results.txt
+2023-02-02 17:36:24,411: INFO:  Successfully stored LogisticRegression_cm.png
+2023-02-02 17:36:27,567: INFO:  Successfully stored RandomForestClassifier_vs_LogisticRegression_roc.png
