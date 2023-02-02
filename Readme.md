@@ -20,3 +20,6 @@ This is a simple machine learning project which does comparison of Random Forest
  Logistic regression is slightly better than Random Forest Regresssion.
  
  
+ Python version used : 3.9
+ 
+ 
