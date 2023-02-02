@@ -1,0 +1,1 @@
+This is a simple machine learning project which does comparison of Random Forest Classifier model and Logistic Regression model using the breast cancer dataset [1] from sklearn package.
