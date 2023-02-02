@@ -1,4 +1,4 @@
-Results of Logistic Regression model:
+Results of model Logistic Regression - Test Data :
 
 Accuracy score: 0.9824561403508771
 Recall score: 0.981651376146789

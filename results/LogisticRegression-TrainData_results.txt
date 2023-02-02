@@ -1,0 +1,5 @@
+Results of model Logistic Regression - Train Data :
+
+Accuracy score: 0.9874371859296482
+Recall score: 0.9841269841269841
+Precision score: 0.9959839357429718
